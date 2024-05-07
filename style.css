@@ -1,0 +1,161 @@
+@media (max-width: 920px) {
+    .inLaptop {
+      display: none !important;
+    }
+    .hamburger {
+      display: flex !important;
+      cursor: pointer;
+    }
+    .hamburger:hover + .inMobile {
+      display: flex !important;
+    }
+    .inMobile:hover {
+      display: flex !important;
+    }
+    .inMobile {
+      position: absolute;
+      width: 100%;
+      top: 60px;
+      right: 20px;
+      left: 100px;
+      flex-direction: column;
+      padding-left: 15px;
+      padding-top: 10px;
+      background-color: rgb(207, 226, 226);
+    }
+    .box button{
+       margin-right: 200px;
+    }
+    .second-main{
+        flex-direction: row;
+    }
+    .service{
+        visibility: hidden;
+    }
+  }
+@media (max-width:500px){
+    nav .logo img{
+       visibility: hidden;
+    }
+    .box button{
+       margin-right: 80px;
+     }
+}
+
+  
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    color: black;
+    padding: 20px 20px 0 20px;
+    align-items: center;
+    overflow: hidden;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    display: flex;
+    gap: 40px;
+}
+nav .inLaptop li {
+    padding: 5px;
+    border-radius: 5px;
+  }
+  nav .inLaptop li:hover {
+    background-color: black;
+  }
+  nav .inLaptop li:hover a {
+    color: white;
+    text-transform: uppercase;
+  }
+  .hamburger {
+    display: none;
+  }
+  .hamburger li {
+    font-size: 25px;
+  }
+
+.container{
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+}
+.box button{
+    background-color: white;
+    color: black;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.box button:hover{
+    background-color: rgb(119, 231, 195);
+}
+nav .logo{
+    font-size: 50px;
+    display: flex;
+}
+.first-main{
+    background-color: rgb(210, 236, 252);
+    width: 80%;
+    height: 80vh;
+    border-radius: 20px;
+    margin: 10px 0px 0px 150px;
+    overflow: hidden;
+}
+.second-main{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 40px 20px 20px;
+}
+.corner{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+}
+.corner h1{
+    color: rgb(33, 83, 235);
+    font-size: 50px;
+    padding-bottom: 10px;
+    padding-top: 50px;
+}
+.corner p{
+    font-size: 1rem;
+}
+.corner button{
+    width: 170px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgb(41, 137, 240);
+    color: white ;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.corner button:hover{
+background-color: rgb(123, 182, 182);
+}
+.boxes{
+    position: relative;
+}
+.service{
+    display: flex;
+    justify-content: center;
+}
+.Third-main{
+    position: absolute;
+}
+.Third-main img{
+    width: 350px;
+    height: 550px;
+    margin-bottom: 80px;
+}
